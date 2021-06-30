@@ -1,15 +1,21 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+const nav = document.querySelector('.nav');
+const toggler = document.querySelector('.header__toggler');
+const logo = document.querySelector('.header__logo');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
+toggler.classList.remove('header__toggler--close');
+nav.classList.add('nav--closed');
+logo.classList.add('header__logo--show');
+
+toggler.addEventListener('click', () => {
+  if (nav.classList.contains('nav--closed')) {
+    nav.classList.remove('nav--closed');
+    toggler.classList.add('header__toggler--close');
+    logo.classList.remove('header__logo--show');
   } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+    nav.classList.add('nav--closed');
+    toggler.classList.remove('header__toggler--close');
+    logo.classList.add('header__logo--show');
   }
-});
+})

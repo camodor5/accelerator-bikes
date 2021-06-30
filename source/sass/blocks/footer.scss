@@ -1,0 +1,121 @@
+.footer {
+  width: 957px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 248px;
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.footer__title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.5%;
+  }
+}
+
+.footer__adress {
+  font-size: 17px;
+  text-align: center;
+  line-height: 31px;
+  font-weight: 400;
+  max-width: 555px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+
+  @media (max-width: $tablet-width) {
+    max-width: unset;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.footer__map {
+  height: 530px;
+  background-image: url('../../img/map.jpg');
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+   background-image: url('../../img/map@2x.png');
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 39px;
+  @media (max-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 31px;
+    padding-left: 43px;
+  }
+}
+
+.footer__item {
+  color: $black5;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer__email {
+  display: block;
+  position: relative;
+  margin-right: 127px;
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    margin-bottom: 22px;
+  }
+}
+
+.footer__email::before {
+  content: "";
+  background: url('../../img/email.svg');
+  display: block;
+  width: 26px;
+  height: 20px;
+  position: absolute;
+  left: -41px;
+  top: 2px;
+}
+
+.footer__tel {
+  display: block;
+  position: relative;
+}
+
+.footer__tel::before {
+  content: "";
+  background: url('../../img/phone.svg');
+  display: block;
+  width: 22px;
+  height: 24px;
+  position: absolute;
+  left: -37px;
+  top: 0;
+}

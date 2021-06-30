@@ -1,3 +1,14 @@
-h1 {
-  color: green;
-}
+@import "normalize.scss";
+@import "fonts.scss";
+@import "global.scss";
+@import "variables.scss";
+
+/*blocks*/
+
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/footer.scss";
+@import "blocks/form.scss";
+@import "blocks/about.scss";
+@import "blocks/bikes.scss";
+@import "blocks/video.scss";
