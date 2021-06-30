@@ -1,0 +1,39 @@
+.page {
+  box-sizing: border-box;
+  font-family: "OpenSans", "Helvetica", sans-serif;
+  min-width: 320px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.page li {
+  list-style: none;
+
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: -1px;
+  left: 0;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
