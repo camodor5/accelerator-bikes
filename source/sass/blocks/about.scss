@@ -3,9 +3,12 @@
   font-size: 30px;
   line-height: 30px;
   font-weight: 600;
+  margin-bottom: 32px;
   @media (max-width: $tablet-width) {
     font-size: 24px;
     line-height: 41px;
+    margin-top: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -17,10 +20,12 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
+  padding-bottom: 129px;
 
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
     padding: 0 106px;
+    margin-top: 14px;
   }
 
   @media (max-width:$mobile-width) {
@@ -35,6 +40,11 @@
   font-size: 22px;
   line-height: 34px;
   letter-spacing: -0.5px;
+  margin-top: 16px;
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    margin-bottom: 19px;
+  }
 }
 
 .about__item-number {
@@ -44,4 +54,13 @@
   line-height: 38px;
   letter-spacing: -1.27px;
   font-weight: 700;
+  margin: 0;
+}
+
+.about__item-text {
+  margin-top: 18px;
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
 }

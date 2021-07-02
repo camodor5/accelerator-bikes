@@ -74,7 +74,7 @@
 .header__container {
   width: 880px;
   margin: 0 auto;
-  margin-top: 265px;
+  margin-top: 255px;
   @media (max-width: $tablet-width) {
     width: 100%;
     box-sizing: border-box;
@@ -103,6 +103,7 @@
     text-align: center;
     box-sizing: border-box;
     margin-top: 0;
+    margin-bottom: 22px;
     font-size: 30px;
     line-height: 42px;
   }
