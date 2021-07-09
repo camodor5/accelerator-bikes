@@ -56,11 +56,16 @@
 }
 
 .footer__map {
+  box-sizing: border-box;
   height: 530px;
   background-image: url('../../img/map.jpg');
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
    background-image: url('../../img/map@2x.png');
   }
+  @media (max-width: $tablet-width) {
+    height:545px;
+  }
+
   @media (max-width: $mobile-width) {
     padding-left: 16px;
     padding-right: 16px;
@@ -75,6 +80,7 @@
   margin-top: 39px;
   @media (max-width: $tablet-width) {
     margin-top: 20px;
+    padding-left: 27px;
   }
 
   @media (max-width: $mobile-width) {
@@ -89,6 +95,9 @@
   color: $black5;
   font-size: 16px;
   line-height: 22px;
+  &:hover {
+    color: $blue;
+  }
 }
 
 .footer__email {
