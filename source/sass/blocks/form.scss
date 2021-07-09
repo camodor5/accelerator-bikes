@@ -58,6 +58,13 @@
   padding-left: 30px;
   font-size: 15px;
   line-height: 24px;
+  &:focus {
+    background-color: $bg-grey;
+  }
+
+  &:hover {
+    border: 3px solid $blue;
+  }
 
   @media (max-width: $tablet-width) {
     width: 321px;
@@ -82,6 +89,7 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;
+  cursor:pointer;
 
   @media (max-width: $tablet-width) {
     width: 321px;
