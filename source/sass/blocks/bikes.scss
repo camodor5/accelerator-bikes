@@ -16,6 +16,7 @@
 .bikes__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1126px;
@@ -115,6 +116,7 @@
   }
 }
 
+
 .bikes__item--mountain {
   position: relative;
   &::before {
@@ -131,7 +133,10 @@
       display: none;
     }
   }
+}
 
+.bikes__name--road {
+  position: relative;
   &::after {
     content: "";
     display: block;
@@ -141,13 +146,12 @@
     border: 8px solid $blue;
     position: absolute;
     right: -19px;
-    bottom: 33px;
+    top: -47px;
     @media (max-width: $tablet-width) {
       display: none;
     }
   }
 }
-
 
 .bikes__item--kid {
   margin-top: -39px;

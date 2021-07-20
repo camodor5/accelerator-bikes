@@ -6,6 +6,9 @@ html {
   box-sizing: border-box;
   font-family: "OpenSans", "Helvetica", sans-serif;
   min-width: 320px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 ul {

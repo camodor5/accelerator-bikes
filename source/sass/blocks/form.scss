@@ -1,11 +1,15 @@
 .form {
-  width: 327px;
   box-sizing: border-box;
-  margin-top: -503px;
   width: 880px;
-  margin: -503px auto 390px;
+  margin: 0 auto;
+  position: absolute;
+  top: 322px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (max-width: $tablet-width) {
+    position: unset;
+    transform: unset;
     margin: 0;
     width: 100%;
   }
