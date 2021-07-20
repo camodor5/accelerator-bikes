@@ -76,6 +76,7 @@
 .footer__contacts {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 39px;
   @media (max-width: $tablet-width) {
