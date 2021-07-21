@@ -58,9 +58,9 @@
 .footer__map {
   box-sizing: border-box;
   height: 530px;
-  background-image: url('../../img/map.jpg');
+  background-image: url('../img/map.jpg');
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url('../../img/map@2x.png');
+    background-image: url('../img/map@2x.png');
   }
   @media (max-width: $tablet-width) {
     height: 545px;

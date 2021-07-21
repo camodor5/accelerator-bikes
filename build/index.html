@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="Сайт о велосипедах" content="Детские велосипеды, горные велосипеды, дорожные велосипеды">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" crossorigin="">
+
 </head>
 <body class="page">
   <header class="page__header header container">
@@ -19,7 +26,7 @@
       </ul>
     </nav>
     <div class="header__container">
-      <a class="header__logo-link">
+      <a href="#" class="header__logo-link">
         <svg class="header__logo" width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite_auto.svg#logo"></use>
         </svg>
@@ -99,7 +106,7 @@
       <h2 class="video__title">Видео про велосипеды</h2>
       <p class="video__intro">В этом видео мы подробно расскажем про особеннности выбора велосипеда для себя.</p>
       <div class="video__player">
-        <button class="video__player-button" type="button">
+        <button class="video__player-button" type="button" aria-label="Кнопка включения видео">
           <svg class="video__player-icon" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z" fill="#0AD9C6"></path>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"></path>
