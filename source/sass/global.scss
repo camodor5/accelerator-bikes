@@ -1,5 +1,11 @@
+
+
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .page {
@@ -43,4 +49,8 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.display-none {
+  display: none;
 }
