@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-left: 22px;
   padding-right: 25px;
   padding-top: 21px;
@@ -32,6 +32,7 @@
   border-bottom: 1px solid $grey-transparent2;
   @media (max-width: $tablet-width) {
     display: block;
+    margin-bottom: 0;
     padding-top: 100px;
     padding-bottom: 138px;
     background-color: $white;
@@ -41,10 +42,15 @@
 }
 
 .nav__item {
+  margin-right: 135px;
+  &:last-of-type {
+    margin-right: 0;
+  }
   @media (max-width: $tablet-width) {
     height: 60px;
     box-sizing: border-box;
     background-color: $light-grey;
+    margin-right: 0;
     margin-bottom: 30px;
     &:last-of-type {
       margin-bottom: 0;
@@ -79,7 +85,7 @@
     display: block;
     width: 25px;
     height: 25px;
-    background-image: url('../../img/arrow.svg');
+    background-image: url('../img/arrow.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;

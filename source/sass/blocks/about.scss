@@ -22,7 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
   padding-bottom: 129px;
 
@@ -48,6 +48,9 @@
   line-height: 34px;
   letter-spacing: -0.5px;
   margin-top: 16px;
+  @media (max-width: $tablet-width) {
+    width: 263px;
+  }
   @media (max-width: $mobile-width) {
     font-size: 18px;
     margin-bottom: 38px;
